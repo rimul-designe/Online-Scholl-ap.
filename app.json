@@ -7,7 +7,7 @@
     "icon": "./aktiva/ikona.png",
     "sdkVersion": "48.0.0",
     "android": {
-      "package": "com.rimuld esigne.onlineschool"
+      "package": "com.rimuldesigne.onlineschool"
     }
   }
 }
