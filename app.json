@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Online School App",
-    "slug": "school-app",
+    "name":"Online School App",
+    "slug":"school-app",
     "version": "1.0.0",
     "platforms": ["ios","android"],
     "icon": "./aktiva/ikona.png",
