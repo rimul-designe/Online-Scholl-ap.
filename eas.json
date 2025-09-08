@@ -1,26 +1,26 @@
 {
   "cli": {
+    "version": ">= 3.17.1",
     "appVersionSource": "remote"
   },
   "build": {
     "development": {
       "android": {
-        "distribution": "internal",
-        "buildType": "apk"
+        "distribution": "internal"
+      },
+      "ios": {
+        "distribution": "internal"
       }
     },
     "preview": {
-      "distribution": "internal",
-      "android": {
-        "buildType": "apk"
-      }
+      "distribution": "internal"
     },
     "production": {
       "android": {
-        "buildType": "apk"
+        "distribution": "store"
       },
       "ios": {
-        "buildType": "archive"
+        "distribution": "store"
       }
     }
   }
