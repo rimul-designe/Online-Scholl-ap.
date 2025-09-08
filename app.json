@@ -11,14 +11,14 @@
       "backgroundColor": "#ffffff"
     },
     "android": {
+      "package": "com.clumi.onlineschollap",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "package": "com.clumi.onlineschool"
+      }
     },
     "ios": {
-      "bundleIdentifier": "com.clumi.onlineschool"
+      "bundleIdentifier": "com.clumi.onlineschollap"
     },
     "web": {
       "favicon": "./assets/favicon.png"
