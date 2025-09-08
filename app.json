@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Online-Scholl-ap",
-    "slug": "Online-Scholl-ap",
+    "name": "Online School App",
+    "slug": "school-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,17 +11,22 @@
       "backgroundColor": "#ffffff"
     },
     "android": {
-      "package": "com.clumi.onlineschollap",
+      "package": "com.rimuldesigne.onlineschool",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
     "ios": {
-      "bundleIdentifier": "com.clumi.onlineschollap"
+      "bundleIdentifier": "com.rimuldesigne.onlineschool"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5e5143e3-5bd7-4e90-82b8-fb252b818d31"
+      }
     }
   }
 }
