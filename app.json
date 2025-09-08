@@ -11,22 +11,22 @@
       "backgroundColor": "#ffffff"
     },
     "android": {
-      "package": "com.rimuldésigne.onlineschool",
+      "package": "com.rimuldesigne.onlineschool",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
     "ios": {
-      "bundleIdentifier": "com.rimuldésigne.onlineschool"
+      "bundleIdentifier": "com.rimuldesigne.onlineschool"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": 
-      }a3109cf0-e460-451d-97d8-a67f0f277ff3
+        "projectId": "a3109cf0-e460-451d-97d8-a67f0f277ff3"
+      }
     }
   }
 }
