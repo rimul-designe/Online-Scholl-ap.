@@ -15,10 +15,12 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "versionCode": 1
     },
     "ios": {
-      "bundleIdentifier": "com.rimuldesigne.onlineschool"
+      "bundleIdentifier": "com.rimuldesigne.onlineschool",
+      "buildNumber": "1"
     },
     "web": {
       "favicon": "./assets/favicon.png"
