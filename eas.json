@@ -8,10 +8,15 @@
       "android": { "distribution": "internal" },
       "ios": { "distribution": "internal" }
     },
-    "preview": { "distribution": "internal" },
+    "preview": {
+      "distribution": "internal"
+    },
     "production": {
       "android": { "distribution": "store" },
       "ios": { "distribution": "store" }
     }
+  },
+  "submit": {
+    "production": {}
   }
 }
