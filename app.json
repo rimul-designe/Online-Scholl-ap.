@@ -1,4 +1,4 @@
-8{
+{
   "expo": {
     "name": "Online School App",
     "slug": "school-app",
@@ -11,21 +11,21 @@
       "backgroundColor": "#ffffff"
     },
     "android": {
-      "package": "com.rimuldesigne.onlineschool",
+      "package": "com.rimuldésigne.onlineschool",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
     "ios": {
-      "bundleIdentifier": "com.rimuldesigne.onlineschool"
+      "bundleIdentifier": "com.rimuldésigne.onlineschool"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId":9750fb82-7140-41e0-b79c-547d20ed1935
+        "projectId": "9750fb82-7140-41e0-b79c-547d20ed1935"
       }
     }
   }
