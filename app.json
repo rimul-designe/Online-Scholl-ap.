@@ -1,35 +1,16 @@
-{
-  "expo": {
-    "name": "Online School App",
-    "slug": "schollap-",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "android": {
-      "package": "com.rimuldésigne.onlineschool",
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
-    },
-    "ios": {
-      "bundleIdentifier": "com.rimuldésigne.onlineschool"
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
-    "plugins": [
-      "expo-notifications"
-    ],
-    "extra": {
-      "eas": {
-        "projectId": "7d23229d-866c-4e4f-b4e3-1db53aaa9f14"
-      }
-    }
-  }
+import React from 'react';
+import * as Notifications from 'expo-notifications';
+import Tabs from './src/navigation/Tabs';
+
+// jak se mají zobrazovat notifikace, když je appka v popředí
+Notifications.setNotificationHandler({
+  handleNotification: async () => ({
+    shouldShowAlert: true,
+    shouldPlaySound: false,
+    shouldSetBadge: false
+  })
+});
+
+export default function App() {
+  return <Tabs />;
 }
