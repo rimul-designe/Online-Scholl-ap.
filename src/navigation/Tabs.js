@@ -18,10 +18,14 @@ function Placeholder({ title }) {
 export default function Tabs() {
   return (
     <NavigationContainer>
-      <Tab.Navigator screenOptions={{ headerTitleAlign: 'center' }}>
+      <Tab.Navigator screenOptions={{ headerShown: true }}>
         <Tab.Screen name="Rozvrh" component={ScheduleScreen} />
-        <Tab.Screen name="Úkoly" children={() => <Placeholder title="Úkoly" />} />
-        <Tab.Screen name="Profil" children={() => <Placeholder title="Profil" />} />
+        <Tab.Screen name="Úkoly">
+          {() => <Placeholder title="Úkoly – coming soon" />}
+        </Tab.Screen>
+        <Tab.Screen name="Profil">
+          {() => <Placeholder title="Profil – coming soon" />}
+        </Tab.Screen>
       </Tab.Navigator>
     </NavigationContainer>
   );
