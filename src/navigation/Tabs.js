@@ -1,26 +1,33 @@
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { NavigationContainer } from '@react-navigation/native';
+import { Ionicons } from '@expo/vector-icons';
+
 import ScheduleScreen from '../screens/ScheduleScreen';
-import { Text, View } from 'react-native';
 
 const Tab = createBottomTabNavigator();
-
-function Placeholder({ title }) {
-  return (
-    <View style={{flex:1, alignItems:'center', justifyContent:'center'}}>
-      <Text style={{fontSize:18}}>{title}</Text>
-    </View>
-  );
-}
 
 export default function Tabs() {
   return (
     <NavigationContainer>
-      <Tab.Navigator screenOptions={{ headerTitleAlign: 'center' }}>
+      <Tab.Navigator
+        screenOptions={({ route }) => ({
+          tabBarIcon: ({ color, size }) => {
+            let iconName;
+
+            if (route.name === 'Rozvrh') {
+              iconName = 'calendar';
+            } else {
+              iconName = 'home';
+            }
+
+            return <Ionicons name={iconName} size={size} color={color} />;
+          },
+          tabBarActiveTintColor: 'tomato',
+          tabBarInactiveTintColor: 'gray',
+        })}
+      >
         <Tab.Screen name="Rozvrh" component={ScheduleScreen} />
-        <Tab.Screen name="Úkoly" children={() => <Placeholder title="Úkoly (brzy)" />} />
-        <Tab.Screen name="Profil" children={() => <Placeholder title="Profil (brzy)" />} />
       </Tab.Navigator>
     </NavigationContainer>
   );
