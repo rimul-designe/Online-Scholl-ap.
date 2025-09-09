@@ -1,27 +1,33 @@
 // src/api/lessons.js
-// Falešná data – zatím uložené přímo v souboru
-// Později se to může napojit na backend nebo databázi
+// Jednoduchá “databáze” hodin – časy jsou ISO stringy.
+// UPRAV je podle sebe.
 
-export const lessons = [
+const lessons = [
   {
-    id: 1,
-    subject: "Matematika",
-    topic: "Algebra – rovnice",
-    time: "08:00",
-    teacher: "Nováková"
+    subject: 'Matematika',
+    topic: 'Lineární rovnice',
+    // za ~10 minut od teď
+    time: new Date(Date.now() + 10 * 60 * 1000).toISOString(),
   },
   {
-    id: 2,
-    subject: "Čeština",
-    topic: "Literatura – Mácha",
-    time: "09:00",
-    teacher: "Svoboda"
+    subject: 'Čeština',
+    topic: 'Skladba věty',
+    // za ~2 hodiny
+    time: new Date(Date.now() + 2 * 60 * 60 * 1000).toISOString(),
   },
   {
-    id: 3,
-    subject: "Angličtina",
-    topic: "Slovesa v přítomném čase",
-    time: "10:00",
-    teacher: "Kovář"
-  }
+    subject: 'Fyzika',
+    topic: 'Newtonovy zákony',
+    // zítra v 8:00
+    time: (() => {
+      const d = new Date();
+      d.setDate(d.getDate() + 1);
+      d.setHours(8, 0, 0, 0);
+      return d.toISOString();
+    })(),
+  },
 ];
+
+export function getLessons() {
+  return lessons;
+}
