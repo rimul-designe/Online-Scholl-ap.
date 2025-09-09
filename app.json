@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Online School App",
-    "slug": "school-app",
+    "slug": "schollap-",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,12 +15,10 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "versionCode": 1
+      }
     },
     "ios": {
-      "bundleIdentifier": "com.rimuldesigne.onlineschool",
-      "buildNumber": "1"
+      "bundleIdentifier": "com.rimuldesigne.onlineschool"
     },
     "web": {
       "favicon": "./assets/favicon.png"
